@@ -175,6 +175,14 @@ header, footer {
   flex-flow: row wrap;
 }
 
+header figure {
+  width: 60%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+}
+
 header {
   padding: 15px 0;
 }
@@ -204,6 +212,14 @@ header nav ul {
   display:flex;
   justify-content: space-around;
   width: 100%;  
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 /* ==========================================================================
    Helper classes
