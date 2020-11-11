@@ -137,6 +137,7 @@ figure {
 
 address {
   font-style: normal;
+  font-size: 1.15em;
 }
 
 .content-wrapper {
@@ -233,15 +234,15 @@ footer .social-icons {
   display:flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 50px;
 }
 
 footer .social-icons p {
   font-size: 1.2em;
-  margin-bottom: 40px;
-  padding-right: 20%;
   background-color: #527158;
   padding: 10px;
   border-radius: 50px;
+  margin-right: 50px;
 }
 
 footer .social-icons p i{
@@ -249,7 +250,10 @@ footer .social-icons p i{
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  letter-spacing: 1px;
+  font-size: 1.125em;
 }
 
 /*Hero styling___________________________*/
@@ -388,9 +392,13 @@ input[type=button] {
 
 /* Social_______________________________ */
 
+.contact h4 {
+  font-size: 1.875em;
+}
+
 .social h4 {
   margin-top: 80px;
-  font-size: 1.875em;
+  font-size: 1.5em;
 }
 
 .footer-content {
