@@ -118,7 +118,7 @@ h2 {
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em; 
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: 500;
 }
 
@@ -222,7 +222,7 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 65%;
+  width: 100%;  /*changed from 65%*/
   margin: 50px 0;
 }
 
@@ -243,7 +243,7 @@ footer .social-icons p {
   padding: 10px;
   border-radius: 50%;
   margin-right: 50px;
-  width: 40px;
+  width: 35px;
   height: 40px;
 }
 
@@ -289,10 +289,11 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   height: 400px;
+  width: 100%;
 }
 
 aside .form {
-  margin-top: 30px;
+  margin: 30px;
 }
  
 input[type=text] {
@@ -459,11 +460,27 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
+}
+
+.faq p {
+  width: 90%;
+}
+
+.faq h4 {
+  padding-right: 20px;
+  
 }
     
-.faq .content-wrapper {
-  margin: 50px 0 0 0;
+main .faq-wrapper {
+  background-color: #527158;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  padding: 0 20px;
+}
+
+.content-wrapper {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,8 +488,7 @@ footer .content-wrapper {
 }
     
 .faq h2 {
-  margin-bottom: 40px;
-  line-height: 1;
+  margin-bottom: 5px;
 }
     
 .faq-content {
@@ -481,6 +497,17 @@ footer .content-wrapper {
     
 .faq-content h4 {
   line-height: 1.333;
+}
+
+/* media-queries  */
+
+@media all and (min-width:768px){
+   
+}
+
+
+@media all and (min-width:1200px){
+
 }
 
 /* ==========================================================================
