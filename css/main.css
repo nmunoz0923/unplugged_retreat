@@ -147,7 +147,7 @@ address {
 
 /*Header Styles__________________________*/
 
-header, footer {
+header footer {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +156,7 @@ header, footer {
 }
 
 header figure {
-  width: 60%;
+  width: 100%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -165,14 +165,16 @@ header figure {
 
 header {
   padding: 15px 0;
+  background-color: #202322;
 }
 
-header, .content-wrapper {
-  margin: 0;
-  display:flex;
+header .content-wrapper {
+  margin: 0px;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  /* color: #202322;  */
 }
 
 header figure {
@@ -234,22 +236,22 @@ footer .social-icons {
   display:flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 footer .social-icons p {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   background-color: #527158;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 50%;
-  margin-right: 50px;
-  width: 35px;
+  /* margin-right: 50px; */
+  width: 40px;
   height: 40px;
 }
 
 footer .social-icons p i{
   font-size: 1.3125em;
-  padding-top: 8px;
+  /* padding-top: 8px; */
 }
 
 footer .copyright {
@@ -263,7 +265,7 @@ footer .copyright {
 
 .hero-area {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-flow: row wrap;
   background: url(../img/jake-pic.jpg);
   background-size:cover;
@@ -294,6 +296,7 @@ aside {
 
 aside .form {
   margin: 30px;
+  width: 50%;
 }
  
 input[type=text] {
@@ -348,7 +351,7 @@ input[type=button] {
 .form-description {
   display:block;
   justify-content: center;
-  width:100%;
+  width:50%;
   margin-top:-20px;
 }
 
@@ -414,9 +417,9 @@ footer .content-wrapper {
   margin-top: 60px;
 }
 
-=============================
+/* ============================= */
 /* About Page */
-=============================
+/* ============================= */
 .mission {
   background-color: #527158;
   display: flex;
@@ -452,9 +455,9 @@ footer .content-wrapper {
   top: 0;
   left: 0;
 } 
-=========================
+/* ========================= */
 /* FAQ Page */
-=========================
+/* ========================= */
 .faq {
   display: flex;
   justify-content: center;
