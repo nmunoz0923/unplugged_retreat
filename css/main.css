@@ -147,12 +147,12 @@ address {
 
 /*Header Styles__________________________*/
 
-header footer {
+header, footer {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #202322;
+  background-color:#202322;
 }
 
 header figure {
@@ -236,22 +236,20 @@ footer .social-icons {
   display:flex;
   justify-content: space-around;
   align-items: center;
-  /* margin-left: 50px; */
 }
 
 footer .social-icons p {
-  /* font-size: 1.2em; */
+  display:flex;
   background-color: #527158;
-  /* padding: 10px; */
   border-radius: 50%;
-  /* margin-right: 50px; */
   width: 40px;
   height: 40px;
 }
 
 footer .social-icons p i{
+  padding-top: 10px;
+  padding-left: 13px;
   font-size: 1.3125em;
-  /* padding-top: 8px; */
 }
 
 footer .copyright {
