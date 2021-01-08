@@ -433,8 +433,8 @@ footer .content-wrapper {
 .contact-section {
   background-color: #2a423a;
   display: flex;
-  flex-direction:column;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* flex-flow: row wrap; */
 }
