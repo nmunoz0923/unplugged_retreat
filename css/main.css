@@ -514,7 +514,29 @@ main .faq-wrapper {
 
 /* media-queries  */
 @media all and (min-width:768px){
-   
+  header {
+    height: 96px;
+  }
+   header .content-wrapper{
+     flex-flow:nowrap;
+   }
+   .header-divider{
+      color:#202322;  
+      height: 0px;
+   }
+   .hero-area {
+     min-height:600px;
+   }
+   aside .content-wrapper{
+    display: flex;
+    flex-direction:column;
+    height: 60%;
+    width: 30%;
+   }
+   .form-description {
+    margin-right: 50px;
+  
+   }
 }
 
 
