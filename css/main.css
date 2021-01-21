@@ -538,6 +538,7 @@ main .faq-wrapper {
    header .content-wrapper{
      width:100%;
      justify-content:space-between;
+     height: 94px;
    }
    .header-divider{
       display:none;
@@ -580,7 +581,6 @@ main .faq-wrapper {
    }
    .features h2 {
     display:flex;
-    flex-flow:wrap;
     font-size: 2.2em;
    }
    .features article {
@@ -588,7 +588,6 @@ main .faq-wrapper {
      flex-flow:column wrap;
      width: 50%;
    }
-
   }   
 
 
