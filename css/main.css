@@ -280,7 +280,6 @@ footer .copyright {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 350px;
-  margin-left: 25px;
 }
 
 /*Aside styles___________________________*/
@@ -515,7 +514,7 @@ main .faq-wrapper {
 
   .content-wrapper {
     max-width:640px;
-    margin:100px 0;
+    margin:10px 0;
   }
 
   h2 {
@@ -538,7 +537,6 @@ main .faq-wrapper {
    header .content-wrapper{
      width:100%;
      justify-content:space-between;
-     height: 94px;
    }
    .header-divider{
       display:none;
@@ -560,10 +558,10 @@ main .faq-wrapper {
      min-height:600px;
    }
 
-   hero-area h1 {
+   .hero-area h1 {
      font-size:3em;
      line-height:1;
-     margin:0;
+     margin-bottom:300px;
    }
 
   /* Aside */
@@ -583,12 +581,17 @@ main .faq-wrapper {
     display:flex;
     font-size: 2.2em;
    }
+
    .features article {
      justify-content: center;
      flex-flow:column wrap;
      width: 50%;
    }
-  }   
+  .fontawesome-icon, .features-item-description{
+    display:flex;
+    justify-content: center;
+  }                        /*need to fix width*/
+}   
 
 
 @media all and (min-width:1200px){
