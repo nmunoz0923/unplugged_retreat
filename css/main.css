@@ -118,7 +118,7 @@ h2 {
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em; 
-  margin: 10px 0;
+  margin: 0px 0;
   font-weight: 500;
 }
 
@@ -542,6 +542,10 @@ main .faq-wrapper {
       display:none;
    }
 
+   nav ul {
+     padding: 0px 45px 0px 0px;
+   }
+
    /* Hero-area */
 
    header figure {
@@ -591,6 +595,10 @@ main .faq-wrapper {
     display:flex;
     justify-content: center;
   }                        /*need to fix width*/
+
+  .features-item-description {
+   align-items:center;
+  }
 }   
 
 
