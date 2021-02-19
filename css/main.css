@@ -93,6 +93,11 @@ html {
   font-size: 16px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -113,12 +118,13 @@ h2 {
   font-weight: 500;
   font-family:'Poppins', sans-serif;
   font-size: 1.875em; 
+  margin: 0;
 }
 
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em; 
-  margin: 0px 0;
+  margin: 20px 0;
   font-weight: 500;
 }
 
@@ -142,10 +148,10 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 10px 0;
+  margin: 50px 0;
 }
 
-/*Header Styles__________________________*/
+/*Header Styles__________________*/
 
 header, footer {
   display:flex;
@@ -156,7 +162,7 @@ header, footer {
 }
 
 header figure {
-  width: 100%;
+  width: 60%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +179,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* color: #202322;  */
+  margin: 0;
 }
 
 header figure {
@@ -210,11 +216,12 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 footer {
-  font-display: auto;
+  /* font-display: auto; */
+  flex-direction: column;
   text-align: center;
 }
 
@@ -223,7 +230,7 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 100%;  /*changed from 65%*/
+  width: 55%;
   margin: 50px 0;
 }
 
@@ -243,23 +250,22 @@ footer .social-icons p {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons p i{
-  padding-top: 11px;
-  padding-left: 12px;
+  /* padding-top: 11px;
+  padding-left: 12px; */
   font-size: 1.3125em;
 }
 
-.facebook-f{
+/* .facebook-f{
   padding-left:4px;
-}
+} */
 
 footer .copyright {
   margin-bottom: 20px;
-  margin-top: -20px;
-  letter-spacing: 1px;
-  font-size: 1.125em;
 }
 
 /*Hero styling___________________________*/
@@ -279,7 +285,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 350px;
+  /* margin-bottom: 350px; */
 }
 
 /*Aside styles___________________________*/
@@ -331,8 +337,7 @@ input[type=button] {
 
 .features h2 {
   margin-bottom:60px;
-  width: 100%;
-
+  /* width: 100%; */
 }
 
 .features article {
@@ -347,11 +352,18 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.form-description {
+/* .form-description {
   display:block;
   justify-content: center;
   width:100%;
   margin-top:20px;
+} */
+
+.icons {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:row wrap;
 }
 
 .features p {
@@ -378,10 +390,8 @@ input[type=button] {
 }
 
 .reviews h3 {
-  /* margin-top: 40px 0; */
-  padding-top: 30px;
-  width: 100%;
-  font-size: 2.25em;
+  margin: 20px 0;
+  width: 55%;
 }
 
 .reviews figure {
@@ -403,7 +413,7 @@ input[type=button] {
 }
 
 .social h4 {
-  margin-top: 80px;
+  margin-top: 10px;
   font-size: 1.5em;
 }
 
@@ -430,15 +440,15 @@ footer .content-wrapper {
 .contact-section {
   background-color: #2a423a;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* flex-flow: row wrap; */
+  flex-flow: row wrap;
 }
 
-.address {
+/* .address {
   width: 100%;
-}
+} */
 
 .contact-content p {
   margin: 0;
@@ -465,19 +475,19 @@ footer .content-wrapper {
 /* ========================= */
 .faq {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
-.faq p {
-  width: 100%;
-  margin-bottom: 50px;
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
-.faq h4 {
-  padding-right: 20px;
-  width: 100%;
+.faq-wrapper h2 {
+  background-color: #527158;
 }
     
 main .faq-wrapper {
@@ -486,19 +496,15 @@ main .faq-wrapper {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
-.content-wrapper {
-  margin-top: 20px;
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;  
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-    
-.faq h2 {
-  margin-bottom: 5px;
 }
     
 .faq-content {
@@ -508,104 +514,6 @@ main .faq-wrapper {
 .faq-content h4 {
   line-height: 1.333;
 }
-
-/* media-queries  */
-@media all and (min-width:768px){
-
-  .content-wrapper {
-    max-width:640px;
-    margin:10px 0;
-  }
-
-  h2 {
-    font-size: 2.25em;
-    line-height: 1.333;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
-  }
-
-  /* Header */
-
-  header {
-    justify-content:space-around;
-    padding:33px 0;
-  }
-
-   header .content-wrapper{
-     width:100%;
-     justify-content:space-between;
-   }
-   .header-divider{
-      display:none;
-   }
-
-   nav ul {
-     padding: 0px 45px 0px 0px;
-   }
-
-   /* Hero-area */
-
-   header figure {
-     width:30%;
-   }
-
-   header nav {
-     width:20%;
-   }
-   header nav ul {
-     justify-content:space-between;
-   }
-   .hero-area {
-     min-height:600px;
-   }
-
-   .hero-area h1 {
-     font-size:3em;
-     line-height:1;
-     margin-bottom:300px;
-   }
-
-  /* Aside */
-
-   aside .content-wrapper {
-     display:flex;
-     justify-content: space-between;
-     flex-flow:row wrap;
-     margin: 50px 0;
-   }
-   aside .content-wrapper .form-description, 
-   aside .content-wrapper .form {
-    width:40%;
-    margin:0;
-   }
-   .features h2 {
-    display:flex;
-    font-size: 2.2em;
-   }
-
-   .features article {
-     justify-content: center;
-     flex-flow:column wrap;
-     width: 50%;
-   }
-  .fontawesome-icon, .features-item-description{
-    display:flex;
-    justify-content: center;
-  }                        /*need to fix width*/
-
-  .features-item-description {
-   align-items:center;
-  }
-}   
-
-
-@media all and (min-width:1200px){
-
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -694,15 +602,396 @@ main .faq-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* media-queries  */
+@media only screen and (min-width:768px) {
+/* Tablet Styles */
+
+  /*General styles*/
+  .content-wrapper {
+    max-width:640px;
+    margin:100px 0;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /* Header */
+
+  header {
+    justify-content:space-around;
+    padding:33px 0;
+  }
+
+   header .content-wrapper{
+    display:flex; 
+    width:100%;
+    justify-content:space-around;
+   }
+
+   .header figure {
+    width: 30%;
+   }
+
+   .header nav {
+     width: 20%;
+   }
+
+   .header nav ul {
+     justify-content: space-between;
+   }
+
+   .header li a{
+     padding-left: 60px;
+   }
+
+   .header-divider {
+      display:none;
+   }
+
+   /* Hero-area */
+
+   .hero-area {
+     min-height:600px;
+   }
+   .hero-area h1 {
+     font-size:3em;
+     line-height:1;
+     margin: 0;
+   }
+
+  /* Aside */
+
+   aside .content-wrapper {
+     display:flex;
+     justify-content: space-between;
+     flex-flow:row wrap;
+     margin: 50px 0;
+   }
+   aside 
+   .content-wrapper 
+   .form-description, 
+   aside 
+   .content-wrapper .form {
+    width:40%;
+    margin:0;
+   }
+
+   /* Features */
+
+   .features h2 {
+    margin-bottom: 20px;
+   }
+
+   .features article {
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     flex-flow: column wrap;
+     flex-basis: 50%;
+   }
+                
+  .feaetures .features-item-description {
+   width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
+  }
+  
+/* Reviews */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure, .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  /* .reviews figure {
+    width: 320px;
+    height: 180px;
+  } */
+
+  /* Footer  */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+  }
+
+  .footer-content .contact {
+    padding-top: 20px;
+  }
+
+  .footer-content {
+    margin-bottom: 0px;
+  }
+
+  footer address {
+    margin-top: 120px;
+    margin-left: -140px;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social {
+    padding-top: 20px;
+    padding-left: 150px;
+  }
+
+  footer .social h4 {
+    font-size: 2em;
+    /* margin-top: -18px; */
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  /********** About Page **********/
+
+  .mission-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
+  footer .about-content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .about-footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+  }
+
+  .about-footer-content {
+    margin-left: 150px;
+  }
+
+  .about-footer-content address {
+    margin-top: 20px;
+  }
+  
+
+  /********** FAQ Page  **********/
+  .faq .content-wrapper {
+    /* justify-content: space-between; */
+  }
+
+  footer .faq-content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .faq-footer-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+  }
+
+  .faq-footer-content h4 {
+    font-size: 1.875em;
+    margin-bottom: 100px;
+  }
+
+  .faq-footer-content h4 {
+    margin-left:20px;
+    margin-top: 0;
+  }
+
+  .faq-footer-content address {
+    padding-top: 60px;
+    padding-right: 250px;
+    margin-right: 100px;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq-wrapper h2 {
+    background-color: #527158;
+    text-align:center;
+  }
+
+  .faq h4, .faq p {
+    font-size: 0.875em;
+    line-height: 1.125;
+  }
+}   
+
+@media only screen and (min-width:1200px) {
+/* Desktop styles */
+
+header {
+  padding: 15px 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.content-wrapper {
+  max-width: 960px;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3, h4 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
+/* Hero */
+.hero-area h1 {
+  font-size: 3.75em;
+  width: 80%;
+
+/* Aside */
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper
+.form-description,
+aside .content-wrapper .form {
+  width: 30%;
+}
+
+.form-description p {
+  font-size: 1.125em;
+}
+
+/* Features */
+
+.features h2 {
+  width: 90%;
+}
+
+.features article {
+  flex-basis:33%;
+}
+
+/* Reviews */
+
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+.reviews article div {
+  width: 42%;
+}
+
+footer h4 {
+  font-size: 1.875em;
+}
+
+.footer address {
+  margin-left: -60px;
+}
+
+/********* About Page***********/
+
+.map figure {
+  padding-bottom: 37.5%;
+}
+
+.mission h2, .contact-section .content-wrapper h2 {
+  width: 95%;
+  font-size: 3em;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
+}
+
+/********** FAQ Page ***********/
+
+.faq h2 {
+  width: 100%;
+  font-size: 3em;
+}
+
+.faq h4, .faq p {
+  font-size: 1.125em;
+  line-height: 1;
+}
+
+main .faq-wrapper {
+  padding: 40px 20px;
+}
 }
 
 /* ==========================================================================
